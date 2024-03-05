@@ -1,4 +1,5 @@
 # vue-cli-learn1
+I created a new Vue project with vue create my-vue-project
 
 ## Project setup
 ```
