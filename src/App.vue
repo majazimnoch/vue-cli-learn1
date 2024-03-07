@@ -8,12 +8,12 @@
     <h2>{{name}}</h2>
     <div>
       <button v-on:click="name = 'Maja'">Change Button</button>
-      <button v-on:mouseover="name = 'Maja'">Hover Button</button>
+      <button v-on:mouseover="changeName">Hover Button</button>
     </div>
     <div>
       <h2>{{ count }}</h2>
-      <button v-on:click="increment">Increment</button>
-      <button v-on:click="count -=1">Decrement</button>
+      <button v-on:click="increment(2)">Increment by 2</button>
+      <button v-on:click="count -=1">Decrement by 1</button>
     </div>
   </div>
 </template>
@@ -41,8 +41,12 @@ export default {
     multiply (num) {
       return num * this.baseMultiplier
     },
-    increment() {
-      this.count += 1
+    increment(num) {
+      this.count += num
+    },
+    changeName(event) {
+this.name = 'batman'
+console.log('Event', event)
     }
   }
 }
