@@ -12,7 +12,7 @@
     </div>
     <div>
       <h2>{{ count }}</h2>
-      <button v-on:click="count += 1">Increment by 1 </button>
+      <button v-on:click="increment">Increment</button>
       <button v-on:click="count -=1">Decrement</button>
     </div>
   </div>
@@ -41,6 +41,9 @@ export default {
     multiply (num) {
       return num * this.baseMultiplier
     },
+    increment() {
+      this.count += 1
+    }
   }
 }
 </script>
