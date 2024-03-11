@@ -1,4 +1,35 @@
 <template>
+fdsf
+
+</template>
+
+<script>
+
+export default {
+  name: 'App',
+  data() {
+    return {
+    }
+  },
+  methods: {
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+</style>
+
+
+
+
+<!-- <template>
   <img alt="Vue logo" src="./assets/goldie.webp">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <h2>{{ 2 + 3 + 5 }}</h2>
@@ -68,3 +99,6 @@ img {
 width: 400px;
 }
 </style>
+
+
+ -->
