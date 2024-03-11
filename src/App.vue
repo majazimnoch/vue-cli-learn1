@@ -5,6 +5,10 @@
   <h2>Add method - {{ add(10,15,20) }}</h2>
   <h2>Multiply method - {{ multiply(baseValue) }}</h2>
   <div>
+    <button v-on:click="changeName($event), increment(1, $event)">Change name
+    </button>
+  </div>
+  <div>
     <h2>{{name}}</h2>
     <div>
       <button v-on:click="name = 'Maja'">Change Button</button>
